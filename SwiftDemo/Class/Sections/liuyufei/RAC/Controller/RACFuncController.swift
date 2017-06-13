@@ -13,8 +13,6 @@ import Result
 import SnapKit
 
 class RACFuncController: UIViewController {
-
-    var textField: UITextField!
     
     fileprivate let textField_top_margin:CGFloat = 20
     fileprivate let textField_height:CGFloat = 100
@@ -27,16 +25,6 @@ class RACFuncController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField = UITextField.init()
-        textField.backgroundColor = UIColor.red
-        textField.text = ""
-        view.addSubview(textField)
-        textField.snp.makeConstraints { (make) in
-            make.left.equalTo(MARGIN)
-            make.right.equalTo(-MARGIN)
-            make.top.equalTo(textField_top_margin + NAVIGATIONBARHEIGHT)
-            make.height.equalTo(textField_height)
-        }
         // Do any additional setup after loading the view.
     }
     //MARK: 信号
@@ -52,6 +40,17 @@ class RACFuncController: UIViewController {
     }
     //MARK: 监听
     public func racObserver() {
+        var textField: UITextField!
+        textField = UITextField.init()
+        textField.backgroundColor = UIColor.red
+        textField.text = ""
+        view.addSubview(textField)
+        textField.snp.makeConstraints { (make) in
+            make.left.equalTo(MARGIN)
+            make.right.equalTo(-MARGIN)
+            make.top.equalTo(textField_top_margin + NAVIGATIONBARHEIGHT)
+            make.height.equalTo(textField_height)
+        }
         textField.reactive.continuousTextValues.observeValues { text in
             YFLog(text ?? "")
         }
