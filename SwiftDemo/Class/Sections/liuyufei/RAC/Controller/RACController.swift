@@ -48,11 +48,13 @@ class RACController: UIViewController {
                 controller.racSignal()
                 break
             case .event:
+                controller.racEvent()
                 break
             case .observer:
                 controller.racObserver()
                 break
             case .disposable:
+                controller.racDisposable()
                 break
             default:
                 break

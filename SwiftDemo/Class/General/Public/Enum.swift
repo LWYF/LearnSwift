@@ -18,3 +18,11 @@ public enum RACType: String {
     case event = "Event"
     case observer = "Observer"
 }
+
+/*
+ 网络数据的请求类型
+ */
+public enum NetRequestType {
+    case GET
+    case POST
+}

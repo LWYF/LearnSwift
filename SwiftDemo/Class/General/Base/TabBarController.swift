@@ -34,12 +34,12 @@ class TabBarController: UITabBarController {
         
         let AR = ARController()
         let navAR = UINavigationController.init(rootViewController: AR)
-        navAR.navigationItem.title = "AR"
+        AR.navigationItem.title = "AR"
         navAR.tabBarItem = UITabBarItem(title: "AR", image: nil, selectedImage: nil)
         
         let VR = VRController()
         let navVR = UINavigationController.init(rootViewController: VR)
-        navVR.navigationItem.title = "VR"
+        VR.navigationItem.title = "VR"
         navVR.tabBarItem = UITabBarItem(title: "VR", image: nil, selectedImage: nil)
         
         self.viewControllers = [navRac,navMedia,navJS,navAR,navVR]

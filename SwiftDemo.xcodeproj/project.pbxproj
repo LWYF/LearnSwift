@@ -10,6 +10,19 @@
 		A711CF4158C41F9FE6A781AD /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */; };
 		BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */; };
 		BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */; };
+		BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */; };
+		BCDD4D5A1EF1340500FA56B5 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D591EF1340500FA56B5 /* IJKMediaFramework.framework */; };
+		BCDD4D5E1EF1343600FA56B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D5D1EF1343600FA56B5 /* AudioToolbox.framework */; };
+		BCDD4D601EF1343E00FA56B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D5F1EF1343E00FA56B5 /* AVFoundation.framework */; };
+		BCDD4D621EF1344D00FA56B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D611EF1344D00FA56B5 /* CoreGraphics.framework */; };
+		BCDD4D641EF1345600FA56B5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D631EF1345600FA56B5 /* CoreVideo.framework */; };
+		BCDD4D661EF1346200FA56B5 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D651EF1346200FA56B5 /* libbz2.tbd */; };
+		BCDD4D681EF1346E00FA56B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D671EF1346E00FA56B5 /* libz.tbd */; };
+		BCDD4D6A1EF1347C00FA56B5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D691EF1347C00FA56B5 /* MediaPlayer.framework */; };
+		BCDD4D6C1EF1348500FA56B5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D6B1EF1348500FA56B5 /* MobileCoreServices.framework */; };
+		BCDD4D6E1EF1348E00FA56B5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D6D1EF1348E00FA56B5 /* OpenGLES.framework */; };
+		BCDD4D701EF1349A00FA56B5 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D6F1EF1349A00FA56B5 /* VideoToolbox.framework */; };
+		BCDD4D861EF15AAD00FA56B5 /* NetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD4D851EF15AAD00FA56B5 /* NetRequest.swift */; };
 		BCE5403E1EEE951000BCA589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE5403D1EEE951000BCA589 /* Assets.xcassets */; };
 		BCE540411EEE951000BCA589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE5403F1EEE951000BCA589 /* LaunchScreen.storyboard */; };
 		BCF3AADE1EEF8F7900B8ABE1 /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3AADD1EEF8F7900B8ABE1 /* AppGlobal.swift */; };
@@ -34,6 +47,20 @@
 		82D4476F3E2A0C0EDD10C698 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingController.swift; sourceTree = "<group>"; };
+		BCDD4D591EF1340500FA56B5 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		BCDD4D5B1EF1342800FA56B5 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		BCDD4D5D1EF1343600FA56B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BCDD4D5F1EF1343E00FA56B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCDD4D611EF1344D00FA56B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCDD4D631EF1345600FA56B5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BCDD4D651EF1346200FA56B5 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		BCDD4D671EF1346E00FA56B5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BCDD4D691EF1347C00FA56B5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BCDD4D6B1EF1348500FA56B5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BCDD4D6D1EF1348E00FA56B5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BCDD4D6F1EF1349A00FA56B5 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BCDD4D851EF15AAD00FA56B5 /* NetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequest.swift; sourceTree = "<group>"; };
 		BCE540331EEE951000BCA589 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE5403D1EEE951000BCA589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE540401EEE951000BCA589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,7 +86,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDD4D701EF1349A00FA56B5 /* VideoToolbox.framework in Frameworks */,
+				BCDD4D6E1EF1348E00FA56B5 /* OpenGLES.framework in Frameworks */,
+				BCDD4D6C1EF1348500FA56B5 /* MobileCoreServices.framework in Frameworks */,
+				BCDD4D6A1EF1347C00FA56B5 /* MediaPlayer.framework in Frameworks */,
+				BCDD4D681EF1346E00FA56B5 /* libz.tbd in Frameworks */,
+				BCDD4D661EF1346200FA56B5 /* libbz2.tbd in Frameworks */,
+				BCDD4D641EF1345600FA56B5 /* CoreVideo.framework in Frameworks */,
+				BCDD4D621EF1344D00FA56B5 /* CoreGraphics.framework in Frameworks */,
+				BCDD4D601EF1343E00FA56B5 /* AVFoundation.framework in Frameworks */,
+				BCDD4D5E1EF1343600FA56B5 /* AudioToolbox.framework in Frameworks */,
 				A711CF4158C41F9FE6A781AD /* Pods_SwiftDemo.framework in Frameworks */,
+				BCDD4D5A1EF1340500FA56B5 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +107,18 @@
 		5A93D5C0100510F93BEEAF49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCDD4D6F1EF1349A00FA56B5 /* VideoToolbox.framework */,
+				BCDD4D6D1EF1348E00FA56B5 /* OpenGLES.framework */,
+				BCDD4D6B1EF1348500FA56B5 /* MobileCoreServices.framework */,
+				BCDD4D691EF1347C00FA56B5 /* MediaPlayer.framework */,
+				BCDD4D671EF1346E00FA56B5 /* libz.tbd */,
+				BCDD4D651EF1346200FA56B5 /* libbz2.tbd */,
+				BCDD4D631EF1345600FA56B5 /* CoreVideo.framework */,
+				BCDD4D611EF1344D00FA56B5 /* CoreGraphics.framework */,
+				BCDD4D5F1EF1343E00FA56B5 /* AVFoundation.framework */,
+				BCDD4D5D1EF1343600FA56B5 /* AudioToolbox.framework */,
+				BCDD4D5B1EF1342800FA56B5 /* AudioUnit.framework */,
+				BCDD4D591EF1340500FA56B5 /* IJKMediaFramework.framework */,
 				27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */,
 			);
 			name = Frameworks;
@@ -134,6 +184,7 @@
 		BC71F68F1EEEAAE500419AA8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BCDD4D851EF15AAD00FA56B5 /* NetRequest.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -414,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF3AB0B1EEFB46E00B8ABE1 /* MediaController.swift */,
+				BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -613,11 +665,13 @@
 				BCF3AB3D1EF00C2700B8ABE1 /* RACFuncController.swift in Sources */,
 				BCF3AB1A1EEFDFEC00B8ABE1 /* Enum.swift in Sources */,
 				BCF3AB211EEFEA1300B8ABE1 /* RAC.swift in Sources */,
+				BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */,
 				BCF3AB081EEFB45700B8ABE1 /* ARController.swift in Sources */,
 				BCF3AADE1EEF8F7900B8ABE1 /* AppGlobal.swift in Sources */,
 				BCF3AB0A1EEFB46200B8ABE1 /* JSController.swift in Sources */,
 				BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */,
 				BCF3AB141EEFB73400B8ABE1 /* RACTableView.swift in Sources */,
+				BCDD4D861EF15AAD00FA56B5 /* NetRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +790,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyf.SwiftDemo;
@@ -751,6 +809,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyf.SwiftDemo;
