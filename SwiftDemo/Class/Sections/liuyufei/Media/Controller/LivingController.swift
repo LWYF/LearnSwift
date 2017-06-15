@@ -8,16 +8,40 @@
 
 import UIKit
 
-private let testLivingURL = "http://116.211.167.106/api/live/aggregation?uid=133825214&interest=1"
-
 class LivingController: UIViewController {
 
+    lazy var livingData = {
+        return LivingViewModel()
+    }()
+    
+    var table: LivesTableView!
+    
+    var animationView: LoadingAnimation!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        animationView = LoadingAnimation()
+        animationView.animatioType = .cirle
+        view.addSubview(animationView)
+        
+        animationView.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalTo(0)
+            make.top.equalTo(0)
+        }
+        
+//        table = LivesTableView.init(frame: view.bounds, style: .plain)
+//        view.addSubview(table)
+//        
+//        livingData.loadAsyncCompleted(succeed: { (response) in
+//            YFLog("response is \(String(describing: response))")
+//        }) { (error) in
+//            YFLog("error is \(String(describing: error))")
+//        }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -20,9 +20,14 @@ public enum RACType: String {
 }
 
 /*
- 网络数据的请求类型
+ * 加载动画的方式
  */
-public enum NetRequestType {
-    case GET
-    case POST
+
+public enum LoadingAnimationType {
+    //多个点横向滚动
+    case point
+    //多个点以圆的方式滚动
+    case cirle
 }
+
+

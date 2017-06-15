@@ -7,15 +7,10 @@
 //
 
 import UIKit
-import ReactiveCocoa
-import ReactiveSwift
-import Result
-
 
 /**
  MVVM的核心，解耦合，处理逻辑
  */
-
 
 class RACViewModel: NSObject {
     var values = [RACModel]()
@@ -31,17 +26,14 @@ class RACViewModel: NSObject {
         
         for dict in racContent {
             let model = RACModel.init(dict)
-            values.append(model)
+            self.values.append(model)
         }
-        if values.count > 0 {
-            succeed(values)
+        if self.values.count > 0 {
+            succeed(self.values)
         }
         else {
             failure("error")
         }
     }
-    
-    
-    
 }
     
