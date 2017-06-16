@@ -14,14 +14,11 @@ class LivingController: UIViewController {
         return LivingViewModel()
     }()
     
-    var table: LivesTableView!
-    
     var animationView: LoadingAnimation!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         animationView = LoadingAnimation()
         animationView.animatioType = .cirle
         view.addSubview(animationView)
@@ -31,15 +28,22 @@ class LivingController: UIViewController {
             make.top.equalTo(0)
         }
         
-//        table = LivesTableView.init(frame: view.bounds, style: .plain)
-//        view.addSubview(table)
-//        
-//        livingData.loadAsyncCompleted(succeed: { (response) in
-//            YFLog("response is \(String(describing: response))")
-//        }) { (error) in
-//            YFLog("error is \(String(describing: error))")
-//        }
+        livingData.loadAsyncCompleted(succeed: { [weak self](response) in
+            //获得数据才会加载tableView
+            self?.animationView.hideAnimationView()
+            let table:LivesTableView = (self?.loadTableView())!
+                table.models = response
+           }) { (error) in
+            YFLog("error is \(String(describing: error))")
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func loadTableView() -> LivesTableView {
+        let frame = CGRect(x: 0, y: NAVIGATIONBARHEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBARHEIGHT)
+        let table = LivesTableView.init(frame: frame, style: .plain)
+        view.addSubview(table)
+        return table
     }
     
     override func didReceiveMemoryWarning() {

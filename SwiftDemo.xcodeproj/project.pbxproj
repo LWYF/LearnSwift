@@ -10,6 +10,8 @@
 		A711CF4158C41F9FE6A781AD /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */; };
 		BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */; };
 		BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */; };
+		BCA7EEB01EF3B4C800B2E236 /* YFCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7EEAF1EF3B4C800B2E236 /* YFCorner.swift */; };
+		BCA7EEB41EF3D5A600B2E236 /* DefaultImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7EEB31EF3D5A600B2E236 /* DefaultImage.xcassets */; };
 		BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */; };
 		BCDD4D5A1EF1340500FA56B5 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D591EF1340500FA56B5 /* IJKMediaFramework.framework */; };
 		BCDD4D5E1EF1343600FA56B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD4D5D1EF1343600FA56B5 /* AudioToolbox.framework */; };
@@ -52,6 +54,8 @@
 		82D4476F3E2A0C0EDD10C698 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BCA7EEAF1EF3B4C800B2E236 /* YFCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFCorner.swift; sourceTree = "<group>"; };
+		BCA7EEB31EF3D5A600B2E236 /* DefaultImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DefaultImage.xcassets; sourceTree = "<group>"; };
 		BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingController.swift; sourceTree = "<group>"; };
 		BCDD4D591EF1340500FA56B5 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BCDD4D5B1EF1342800FA56B5 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -187,6 +191,7 @@
 		BC71F68E1EEEAAE500419AA8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				BCA7EEAF1EF3B4C800B2E236 /* YFCorner.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 		BC71F6991EEEAAE500419AA8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BCA7EEB31EF3D5A600B2E236 /* DefaultImage.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -610,6 +616,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE540411EEE951000BCA589 /* LaunchScreen.storyboard in Resources */,
+				BCA7EEB41EF3D5A600B2E236 /* DefaultImage.xcassets in Resources */,
 				BCE5403E1EEE951000BCA589 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +693,7 @@
 				BCF3AB211EEFEA1300B8ABE1 /* RAC.swift in Sources */,
 				BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */,
 				BCF293971EF2A326008FDFA8 /* LiveCell.swift in Sources */,
+				BCA7EEB01EF3B4C800B2E236 /* YFCorner.swift in Sources */,
 				BCF2938F1EF27163008FDFA8 /* BaseModel.swift in Sources */,
 				BCF3AB081EEFB45700B8ABE1 /* ARController.swift in Sources */,
 				BCF3AADE1EEF8F7900B8ABE1 /* AppGlobal.swift in Sources */,

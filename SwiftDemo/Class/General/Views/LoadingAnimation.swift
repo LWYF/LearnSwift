@@ -56,6 +56,10 @@ class LoadingAnimation: UIView {
         pointLayer.add(animation, forKey: nil)
     }
     
+    public func hideAnimationView() {
+        self.removeFromSuperview()
+    }
+    
     //创建背景层
     private func createBackLayer() -> CAReplicatorLayer {
         let layer = CAReplicatorLayer.init()

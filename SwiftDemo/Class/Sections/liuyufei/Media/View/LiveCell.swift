@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class LiveCell: UITableViewCell {
 
@@ -34,6 +35,9 @@ class LiveCell: UITableViewCell {
     
     private func loadView() {
         headerImage = UIImageView.init()
+//        headerImage.image = UIImage.init(named: "default")
+        headerImage.addCorner(headerImage_height / 2,
+                              size: CGSize(width: headerImage_height, height: headerImage_height))
         self.contentView.addSubview(headerImage)
         
         headerImage.snp.makeConstraints { (make) in
@@ -41,38 +45,46 @@ class LiveCell: UITableViewCell {
             make.width.height.equalTo(headerImage_height)
         }
         
-        liveName = UILabel.init()
-        self.contentView.addSubview(liveName)
-        
-        liveName.snp.makeConstraints { (make) in
-            make.left.equalTo(headerImage.snp.right).offset(MARGIN)
-            make.top.equalTo(headerImage).offset(0)
-        }
-        
-        liveAddress = UILabel.init()
-        self.contentView.addSubview(liveAddress)
-        
-        liveAddress.snp.makeConstraints { (make) in
-            make.left.equalTo(liveName).offset(0)
-            make.top.equalTo(liveName).offset(0)
-        }
-        
-        watchedNum = UILabel.init()
-        watchedNum.textAlignment = .right
-        self.contentView.addSubview(watchedNum)
-        
-        watchedNum.snp.makeConstraints { (make) in
-            make.right.equalTo(MARGIN)
-            make.width.equalTo(watchedNum_width)
-            make.centerX.equalTo(self)
-        }
-        
-        livingPicture = UIImageView.init()
-        self.contentView.addSubview(livingPicture)
-        
-        livingPicture.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalTo(0)
-            make.top.equalTo(headerImage).offset(MARGIN)
+//        liveName = UILabel.init()
+//        self.contentView.addSubview(liveName)
+//        
+//        liveName.snp.makeConstraints { (make) in
+//            make.left.equalTo(headerImage.snp.right).offset(MARGIN)
+//            make.top.equalTo(headerImage).offset(0)
+//        }
+//        
+//        liveAddress = UILabel.init()
+//        self.contentView.addSubview(liveAddress)
+//        
+//        liveAddress.snp.makeConstraints { (make) in
+//            make.left.equalTo(liveName).offset(0)
+//            make.top.equalTo(liveName).offset(0)
+//        }
+//        
+//        watchedNum = UILabel.init()
+//        watchedNum.textAlignment = .right
+//        self.contentView.addSubview(watchedNum)
+//        
+//        watchedNum.snp.makeConstraints { (make) in
+//            make.right.equalTo(MARGIN)
+//            make.width.equalTo(watchedNum_width)
+//            make.centerX.equalTo(self)
+//        }
+//        
+//        livingPicture = UIImageView.init()
+//        self.contentView.addSubview(livingPicture)
+//        
+//        livingPicture.snp.makeConstraints { (make) in
+//            make.left.right.bottom.equalTo(0)
+//            make.top.equalTo(headerImage).offset(MARGIN)
+//        }
+    }
+    
+    var livingContent: livesModel? {
+        didSet {
+            if let strURL = livingContent?.creater.portrait {
+                headerImage.kf.setImage(with: URL(string: strURL))
+            }
         }
     }
     

@@ -8,17 +8,6 @@
 
 import UIKit
 
-class RACModel: NSObject {
-
+class RACModel: BaseModel {
     var title: String = ""
-    
-    init(_ dict: [String : Any]) {
-        super.init()
-        //字典转model
-        self.setValuesForKeys(dict)
-    }
-    
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
-    }
 }

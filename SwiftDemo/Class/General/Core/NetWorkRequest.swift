@@ -12,6 +12,13 @@ import Alamofire
 public typealias successRequest = (_ response : [String : Any]) -> ()
 public typealias failureRequest = (_ error: Error) -> ()
 
+/*
+ iOS 9后请求网络时，新特性要求App内访问网络请求采用HTTPS协议
+ 即ATS禁止了HTTP的明文传输，因为它不安全
+ 可以修改info.plist文件，让它临时允许明文传输
+ Info.plist 添加App Transport SecuritySettings,Type 为Dictionary,
+ 添加Allow Arbitray Loads,type 为Boolean,value 改为YES
+ */
 
 class NetWorkRequest: NSObject {
     static let sharedInstance = NetWorkRequest()

@@ -34,8 +34,11 @@ class LivesTableView: UITableView {
         self.showsVerticalScrollIndicator = false
         //铺满分割线
         self.separatorInset = .zero
+        self.rowHeight = 430
         //添加cell
         self.register(LiveCell.self, forCellReuseIdentifier: cellId)
+//        self.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+
     }
 }
 
@@ -50,10 +53,9 @@ extension LivesTableView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell:LiveCell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! LiveCell
         cell.selectionStyle = .none
-//        let cellStr = models?[indexPath.row].title ?? ""
-//        cell.textLabel?.text = cellStr
+        cell.livingContent = models?[indexPath.row]
         return cell
     }
 }

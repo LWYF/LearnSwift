@@ -20,18 +20,18 @@ class RACController: UIViewController {
     
     var table: RACTableView!
     
-    fileprivate let rac_tableView_height:CGFloat = 200
+    fileprivate let rac_tableView_height:CGFloat = 250
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let frame = CGRect(x: 0, y: NAVIGATIONBARHEIGHT, width: SCREEN_WIDTH, height: rac_tableView_height)
+        let frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: rac_tableView_height)
         table = RACTableView.init(frame: frame, style: .plain)
         view.addSubview(table)
         
         
         let tips = UILabel()
-        tips.frame = CGRect(x: MARGIN, y: rac_tableView_height + NAVIGATIONBARHEIGHT + MARGIN, width: SCREEN_WIDTH - 2 * MARGIN, height: rac_tableView_height)
+        tips.frame = CGRect(x: MARGIN, y: rac_tableView_height + MARGIN, width: SCREEN_WIDTH - 2 * MARGIN, height: rac_tableView_height)
         tips.text = "RAC：数据与视图绑定，当数据变化时，视图不需要额外的处理，便可正确的呈现最新的数据\n"
         tips.numberOfLines = 0
         tips.sizeToFit()
