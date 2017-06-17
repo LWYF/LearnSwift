@@ -25,24 +25,42 @@ class MediaController: UIViewController {
     //访问权限依次为open,pulbic,intenal,fileprivate,private
     //fileprivate 文件内私有
     fileprivate func loadInterface() {
-        setupLivingButton()
+        setupButton()
     }
     //private为真正私有，离开这个类或结构体的作用域外无法访问
-    private func setupLivingButton() {
-        let button = UIButton.init(type: .custom)
-        button.backgroundColor = UIColor.red
-        button.setTitle("直播", for: .normal)
-        view.addSubview(button)
+    private func setupButton() {
+        let livingButton = UIButton.init(type: .custom)
+        livingButton.backgroundColor = UIColor.red
+        livingButton.setTitle("直播", for: .normal)
+        view.addSubview(livingButton)
         
-        button.snp.makeConstraints { (make) in
+        livingButton.snp.makeConstraints { (make) in
             make.top.equalTo(NAVIGATIONBARHEIGHT + button_top_margin)
             make.left.equalTo(MARGIN)
             make.right.equalTo(-MARGIN)
             make.height.equalTo(button_height)
         }
         
-        button.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
+        livingButton.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
             let controller = LivingController()
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+        
+        let caputreButton = UIButton.init(type: .custom)
+        caputreButton.backgroundColor = UIColor.orange
+        caputreButton.setTitle("采集视频", for: .normal)
+        view.addSubview(caputreButton)
+        
+        caputreButton.snp.makeConstraints { (make) in
+            make.top.equalTo(livingButton.snp.bottom).offset(MARGIN)
+            make.left.equalTo(MARGIN)
+            make.right.equalTo(-MARGIN)
+            make.height.equalTo(button_height)
+        }
+        
+        caputreButton.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
+            let controller = CaputreController()
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }

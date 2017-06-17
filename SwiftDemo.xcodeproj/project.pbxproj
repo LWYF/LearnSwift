@@ -46,6 +46,8 @@
 		BCF3AB1A1EEFDFEC00B8ABE1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3AB191EEFDFEC00B8ABE1 /* Enum.swift */; };
 		BCF3AB211EEFEA1300B8ABE1 /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3AB201EEFEA1300B8ABE1 /* RAC.swift */; };
 		BCF3AB3D1EF00C2700B8ABE1 /* RACFuncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3AB3C1EF00C2700B8ABE1 /* RACFuncController.swift */; };
+		BCF5C2781EF4F1250085F50D /* WatchLivingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5C2771EF4F1250085F50D /* WatchLivingController.swift */; };
+		BCF5C27A1EF506420085F50D /* CaputreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5C2791EF506420085F50D /* CaputreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,8 @@
 		BCF3AB191EEFDFEC00B8ABE1 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		BCF3AB201EEFEA1300B8ABE1 /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
 		BCF3AB3C1EF00C2700B8ABE1 /* RACFuncController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACFuncController.swift; sourceTree = "<group>"; };
+		BCF5C2771EF4F1250085F50D /* WatchLivingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLivingController.swift; sourceTree = "<group>"; };
+		BCF5C2791EF506420085F50D /* CaputreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaputreController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,6 +487,8 @@
 			children = (
 				BCF3AB0B1EEFB46E00B8ABE1 /* MediaController.swift */,
 				BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */,
+				BCF5C2771EF4F1250085F50D /* WatchLivingController.swift */,
+				BCF5C2791EF506420085F50D /* CaputreController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -682,6 +688,7 @@
 				BCF3AB181EEFBA0A00B8ABE1 /* RACViewModel.swift in Sources */,
 				BCF2938D1EF234ED008FDFA8 /* NetWorkRequest.swift in Sources */,
 				BCF293951EF2A1A7008FDFA8 /* LivesTableView.swift in Sources */,
+				BCF5C27A1EF506420085F50D /* CaputreController.swift in Sources */,
 				BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */,
 				BCF293911EF271D4008FDFA8 /* LivingModel.swift in Sources */,
 				BCF293991EF2AAAC008FDFA8 /* LoadingAnimation.swift in Sources */,
@@ -693,6 +700,7 @@
 				BCF3AB211EEFEA1300B8ABE1 /* RAC.swift in Sources */,
 				BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */,
 				BCF293971EF2A326008FDFA8 /* LiveCell.swift in Sources */,
+				BCF5C2781EF4F1250085F50D /* WatchLivingController.swift in Sources */,
 				BCA7EEB01EF3B4C800B2E236 /* YFCorner.swift in Sources */,
 				BCF2938F1EF27163008FDFA8 /* BaseModel.swift in Sources */,
 				BCF3AB081EEFB45700B8ABE1 /* ARController.swift in Sources */,

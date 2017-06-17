@@ -14,8 +14,18 @@ class LivingController: UIViewController {
         return LivingViewModel()
     }()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = false
+    }
+    
     var animationView: LoadingAnimation!
     
+    lazy var table: LivesTableView = {
+        let frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBARHEIGHT)
+        let tableView = LivesTableView.init(frame: frame, style: .plain)
+        return tableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +37,29 @@ class LivingController: UIViewController {
             make.left.right.bottom.equalTo(0)
             make.top.equalTo(0)
         }
+    
         
         livingData.loadAsyncCompleted(succeed: { [weak self](response) in
             //获得数据才会加载tableView
             self?.animationView.hideAnimationView()
-            let table:LivesTableView = (self?.loadTableView())!
-                table.models = response
-           }) { (error) in
+            self?.view.addSubview((self?.table)!)
+            self?.table.models = response
+           }) { [weak self] (error) in
+            self?.animationView.hideAnimationView()
+            self?.table.isHidden = true
             YFLog("error is \(String(describing: error))")
         }
+        
+        watchLiving()
         // Do any additional setup after loading the view.
     }
     
-    func loadTableView() -> LivesTableView {
-        let frame = CGRect(x: 0, y: NAVIGATIONBARHEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - NAVIGATIONBARHEIGHT)
-        let table = LivesTableView.init(frame: frame, style: .plain)
-        view.addSubview(table)
-        return table
+    func watchLiving() {
+        table.signal.observeValues({ (model) in
+            let controller = WatchLivingController()
+            controller.living = model
+            self.present(controller, animated: true, completion: nil)
+        })
     }
     
     override func didReceiveMemoryWarning() {

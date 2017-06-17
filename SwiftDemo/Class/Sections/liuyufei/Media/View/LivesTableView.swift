@@ -14,7 +14,7 @@ import Result
 class LivesTableView: UITableView {
 
     let cellId = "livesCellId"
-    let (signal, obser) = Signal<Any, NoError>.pipe()
+    let (signal, obser) = Signal<livesModel, NoError>.pipe()
 
     public var models: [livesModel]?
     
@@ -28,6 +28,7 @@ class LivesTableView: UITableView {
     }
     
     private func loadView() {
+        self.backgroundColor = UIColor.red
         self.dataSource = self
         self.delegate = self
         self.showsHorizontalScrollIndicator = false
@@ -63,6 +64,7 @@ extension LivesTableView: UITableViewDataSource {
 extension LivesTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //RAC，相当于代理方法的作用
-//        obser.send(value: models?[indexPath.row].title ?? "")
+        let model = models?[indexPath.row]
+        obser.send(value: model!)
     }
 }
