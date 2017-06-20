@@ -64,6 +64,24 @@ class MediaController: UIViewController {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
+        //关于Core Image的一些
+        let coreImageButton = UIButton.init(type: .custom)
+        coreImageButton.backgroundColor = UIColor.blue
+        coreImageButton.setTitle("CoreImage相关", for: .normal)
+        view.addSubview(coreImageButton)
+        
+        coreImageButton.snp.makeConstraints { (make) in
+            make.top.equalTo(caputreButton.snp.bottom).offset(MARGIN)
+            make.left.equalTo(MARGIN)
+            make.right.equalTo(-MARGIN)
+            make.height.equalTo(button_height)
+        }
+        
+        coreImageButton.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
+            let controller = CoreImageController()
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
     
     override func didReceiveMemoryWarning() {

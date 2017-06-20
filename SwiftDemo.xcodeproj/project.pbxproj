@@ -10,6 +10,10 @@
 		A711CF4158C41F9FE6A781AD /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */; };
 		BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */; };
 		BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */; };
+		BC8BD87D1EF8F97B004DE788 /* FilterVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */; };
+		BC8BD87F1EF90A28004DE788 /* CoreImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BD87E1EF90A28004DE788 /* CoreImageController.swift */; };
+		BC8BD8811EF90A89004DE788 /* CoreImageFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BD8801EF90A89004DE788 /* CoreImageFunc.swift */; };
+		BC8BD8831EF913C4004DE788 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BD8821EF913C4004DE788 /* UtilsMacro.swift */; };
 		BCA7EEB01EF3B4C800B2E236 /* YFCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7EEAF1EF3B4C800B2E236 /* YFCorner.swift */; };
 		BCA7EEB41EF3D5A600B2E236 /* DefaultImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA7EEB31EF3D5A600B2E236 /* DefaultImage.xcassets */; };
 		BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */; };
@@ -56,6 +60,10 @@
 		82D4476F3E2A0C0EDD10C698 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterVideoController.swift; sourceTree = "<group>"; };
+		BC8BD87E1EF90A28004DE788 /* CoreImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImageController.swift; sourceTree = "<group>"; };
+		BC8BD8801EF90A89004DE788 /* CoreImageFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImageFunc.swift; sourceTree = "<group>"; };
+		BC8BD8821EF913C4004DE788 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
 		BCA7EEAF1EF3B4C800B2E236 /* YFCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YFCorner.swift; sourceTree = "<group>"; };
 		BCA7EEB31EF3D5A600B2E236 /* DefaultImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DefaultImage.xcassets; sourceTree = "<group>"; };
 		BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingController.swift; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF3AB191EEFDFEC00B8ABE1 /* Enum.swift */,
+				BC8BD8801EF90A89004DE788 /* CoreImageFunc.swift */,
 				BCF3AB201EEFEA1300B8ABE1 /* RAC.swift */,
 			);
 			path = Public;
@@ -245,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF3AADD1EEF8F7900B8ABE1 /* AppGlobal.swift */,
+				BC8BD8821EF913C4004DE788 /* UtilsMacro.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -489,6 +499,8 @@
 				BCDD4D571EF11B8D00FA56B5 /* LivingController.swift */,
 				BCF5C2771EF4F1250085F50D /* WatchLivingController.swift */,
 				BCF5C2791EF506420085F50D /* CaputreController.swift */,
+				BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */,
+				BC8BD87E1EF90A28004DE788 /* CoreImageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -689,8 +701,10 @@
 				BCF2938D1EF234ED008FDFA8 /* NetWorkRequest.swift in Sources */,
 				BCF293951EF2A1A7008FDFA8 /* LivesTableView.swift in Sources */,
 				BCF5C27A1EF506420085F50D /* CaputreController.swift in Sources */,
+				BC8BD87D1EF8F97B004DE788 /* FilterVideoController.swift in Sources */,
 				BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */,
 				BCF293911EF271D4008FDFA8 /* LivingModel.swift in Sources */,
+				BC8BD8831EF913C4004DE788 /* UtilsMacro.swift in Sources */,
 				BCF293991EF2AAAC008FDFA8 /* LoadingAnimation.swift in Sources */,
 				BCF3AAE61EEFAC7A00B8ABE1 /* AttributeInit.swift in Sources */,
 				BCF293891EF22056008FDFA8 /* LivingViewModel.swift in Sources */,
@@ -701,11 +715,13 @@
 				BCDD4D581EF11B8D00FA56B5 /* LivingController.swift in Sources */,
 				BCF293971EF2A326008FDFA8 /* LiveCell.swift in Sources */,
 				BCF5C2781EF4F1250085F50D /* WatchLivingController.swift in Sources */,
+				BC8BD87F1EF90A28004DE788 /* CoreImageController.swift in Sources */,
 				BCA7EEB01EF3B4C800B2E236 /* YFCorner.swift in Sources */,
 				BCF2938F1EF27163008FDFA8 /* BaseModel.swift in Sources */,
 				BCF3AB081EEFB45700B8ABE1 /* ARController.swift in Sources */,
 				BCF3AADE1EEF8F7900B8ABE1 /* AppGlobal.swift in Sources */,
 				BCF3AB0A1EEFB46200B8ABE1 /* JSController.swift in Sources */,
+				BC8BD8811EF90A89004DE788 /* CoreImageFunc.swift in Sources */,
 				BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */,
 				BCF3AB141EEFB73400B8ABE1 /* RACTableView.swift in Sources */,
 			);
