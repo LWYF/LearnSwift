@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A711CF4158C41F9FE6A781AD /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */; };
+		BC545AF31EFA1B92004C58BC /* FilterImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC545AF21EFA1B92004C58BC /* FilterImageController.swift */; };
 		BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */; };
 		BC71F69F1EEEAC0200419AA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */; };
 		BC8BD87D1EF8F97B004DE788 /* FilterVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */; };
@@ -58,6 +59,7 @@
 		185B8BBDBA36495BDE88478D /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		27BF5608E91E90DA2BCD84C0 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D4476F3E2A0C0EDD10C698 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BC545AF21EFA1B92004C58BC /* FilterImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterImageController.swift; sourceTree = "<group>"; };
 		BC71F69C1EEEAB0100419AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71F69E1EEEAC0200419AA8 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterVideoController.swift; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 				BCF5C2791EF506420085F50D /* CaputreController.swift */,
 				BC8BD87C1EF8F97B004DE788 /* FilterVideoController.swift */,
 				BC8BD87E1EF90A28004DE788 /* CoreImageController.swift */,
+				BC545AF21EFA1B92004C58BC /* FilterImageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				TargetAttributes = {
 					BCE540321EEE951000BCA589 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = QLXJ25NNS6;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -701,6 +705,7 @@
 				BCF2938D1EF234ED008FDFA8 /* NetWorkRequest.swift in Sources */,
 				BCF293951EF2A1A7008FDFA8 /* LivesTableView.swift in Sources */,
 				BCF5C27A1EF506420085F50D /* CaputreController.swift in Sources */,
+				BC545AF31EFA1B92004C58BC /* FilterImageController.swift in Sources */,
 				BC8BD87D1EF8F97B004DE788 /* FilterVideoController.swift in Sources */,
 				BC71F69D1EEEAB0100419AA8 /* AppDelegate.swift in Sources */,
 				BCF293911EF271D4008FDFA8 /* LivingModel.swift in Sources */,
@@ -842,14 +847,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QLXJ25NNS6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyf.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -861,14 +870,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QLXJ25NNS6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyf.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

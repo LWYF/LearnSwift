@@ -39,7 +39,7 @@ class CoreImageController: UIViewController {
     }
 
     func filterFunc() {
-        
+        YFLog("真机测试")
     }
     
     override func didReceiveMemoryWarning() {

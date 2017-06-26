@@ -67,7 +67,7 @@ class MediaController: UIViewController {
         //关于Core Image的一些
         let coreImageButton = UIButton.init(type: .custom)
         coreImageButton.backgroundColor = UIColor.blue
-        coreImageButton.setTitle("CoreImage相关", for: .normal)
+        coreImageButton.setTitle("CoreImage,过滤", for: .normal)
         view.addSubview(coreImageButton)
         
         coreImageButton.snp.makeConstraints { (make) in
@@ -78,7 +78,7 @@ class MediaController: UIViewController {
         }
         
         coreImageButton.reactive.controlEvents(.touchUpInside).observeValues { (sender) in
-            let controller = CoreImageController()
+            let controller = FilterImageController()
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
